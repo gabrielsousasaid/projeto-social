@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body{
+    height: 100vh;
+    width: 100vw; /*Aqui definimos que o body e o html ocupe 100 de toda nossa viewport*/
+    background-color: black;
+}
+body{
+    background: url('../imagens/fundo-madeira.jpg') no-repeat top center;
+    background-size: cover; /*Aqui carregamos a imagem de fundo no Body, a de madeira, deixamos a size em cover, para cobrir toda a página e deixamos o fundo fixo, para ele não rolar junto com o resto do conteúdo*/
+    background-attachment: fixed;
+}
+main{
+    position:relative; /*Aqui tornamos o container de fora relativo, para podermos centralizar o container de dentro, o section#telefone*/
+    height: 100vh; /*Deixamos a altura da caixa main ocupando 100% da altura da viewport*/
+    
+}
+section#telefone{
+    position: absolute;
+    top: 50%; /*Aqui tornamos o container interno ao main, absolute e mechemos nos parametros de posionamento, para deixarmos ele sempre no meio da caixa main (meio da página web)*/
+    left: 50%;
+    transform: translate(-50%, -50%); /*Técnica utilizada para centralizar caixas. Apos definirmos top e left com porcentagem de 50 por cento positiva, temos que depois utilizar o transform para deixar negativo. Assim centralizamos uma caixa no meio com a positon absolute*/
+
+    height: 627px;/*Aqui definimos o tamanho da caixa exatamente com o tamanho das dimensões da imagem, para que ela aparece por completo dentro da caixa section#telefone*/
+    width: 311px;
+    background:url('../imagens/frame-iphone.png') no-repeat; /*Aqui utilizamos o shorthand de background para carregar nossa imagem dentro da caixa section#telefone*/
+    
+
+}
