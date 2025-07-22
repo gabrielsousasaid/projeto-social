@@ -39,3 +39,21 @@ iframe#tela{
     width: 269px;/*E aqui definimos a altura e largura do iframe. E como que determinanos na página home, que ele seria cover, ou seja, cobrir todo o conteúdo da janela, ele se adapta certinho no celular*/
     height: 471px;
 }
+
+section#redes-sociais{
+    text-align: right; /*Aqui configuramos para os links ficarem a esquerda*/
+}
+
+section#redes-sociais > a > img{
+    width: 50px;
+    margin: 10px;
+    border-radius: 50%;/*Aqui foi a técnica utilizada para transformar as imagens em ícones redondos*/
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.447);
+    box-sizing: border-box; /*Conceito novo aprendido, muito legal. Fazendo isso, tornamos a borda como parte da imagem. Isso evita o deslocamento das mesmas após passar o mouse em cima do ícone para eles aparecerem.*/
+}
+section#redes-sociais img:hover{
+    border: 2px solid rgba(255, 255, 255, 0.636);
+    transform: translate(-3px, -3px);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.627);
+    transition: transform 0.3s, border 0.2s;
+}
