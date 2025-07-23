@@ -36,7 +36,7 @@ iframe#tela{
     position: relative; /*Aqui transformamos nossa caixa do iframe em position relative para podermos mecher no seu TOP E LEFT e ajustar de acordo com a section telefone para tudo se encaixar*/
     top: 80px;
     left: 22px;
-    width: 269px;/*E aqui definimos a altura e largura do iframe. E como que determinanos na página home, que ele seria cover, ou seja, cobrir todo o conteúdo da janela, ele se adapta certinho no celular*/
+    width: 266px;/*E aqui definimos a altura e largura do iframe. E como que determinanos na página home, que ele seria cover, ou seja, cobrir todo o conteúdo da janela, ele se adapta certinho no celular*/
     height: 471px;
 }
 
